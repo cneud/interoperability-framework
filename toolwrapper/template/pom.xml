@@ -6,7 +6,7 @@
 	<groupId>${global_package_name}</groupId>
 	<artifactId>impact-${project_midfix_lc}-service</artifactId>
 	<packaging>war</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 
 	<name>${global_project_prefix} ${project_title} Version ${tool_version} Service</name>
 
