@@ -82,15 +82,15 @@ public class ServiceImplTest {
 		assertFalse(message.indexOf("warnings or errors") >= 0);
 	}
 	
-	@Test
+/*	@Test
 	public void testStoreDataLogs() throws MalformedURLException, IOException {
-		String message = executeWithString(getText("http://localhost:9001/log_eval.txt"));	
+		String message = executeWithString(getText("http://localhost:9001/log_eval.txt"));
 		assertFalse(message.indexOf("warnings or errors") >= 0);
 
-		message = executeWithString(getText("http://localhost:9001/log_tesseract.txt"));	
+		message = executeWithString(getText("http://localhost:9001/log_tesseract.txt"));
 		assertFalse(message.indexOf("warnings or errors") >= 0);
 
-	}
+	}*/
 
 	@Test
 	public void testStoreDataBadArguments() throws MalformedURLException, IOException {
