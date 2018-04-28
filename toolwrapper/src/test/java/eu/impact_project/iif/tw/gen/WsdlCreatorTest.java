@@ -323,7 +323,7 @@ public class WsdlCreatorTest
     {
         Deployment instance = new Deployment();
         instance.setDataexchange(null);
-        instance.setHost(null);;
+        instance.setHost(null);
         instance.setId(null);
         instance.setIdentifier(null);
         instance.setManager(null);
