@@ -43,8 +43,8 @@ public class FilePrinterTest
 
         when(config.getServletContext()).thenReturn(context);        
         when(context.getRequestDispatcher("/interface.jsp")).thenReturn(dispatcher);
-        when(request.getParameter("file")).thenReturn("prueba.txt");
-        URL url = this.getClass().getResource("/prueba.txt");        
+        when(request.getParameter("file")).thenReturn("test.txt");
+        URL url = this.getClass().getResource("/test.txt");
         File testFile = new File(url.getFile());
         when(context.getAttribute("javax.servlet.context.tempdir")).thenReturn(new File(testFile.getParent()));        
         when(response.getOutputStream()).thenReturn(stream);
