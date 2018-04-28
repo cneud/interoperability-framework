@@ -60,7 +60,7 @@ public class PropertiesSubstitutorTest {
     public void testAddVariable() {
         st.addVariable("testvar", "testval");
         String val = st.getContextProp("testvar");
-        assertTrue("Test variable not created successfully.",val.equals("testval"));
+        assertEquals("Test variable not created successfully.", "testval", val);
         st.applySubstitution(val);
     }
 
@@ -82,15 +82,11 @@ public class PropertiesSubstitutorTest {
         st.addVariable("global_package_name", "org.apache.axis2");
 
         st.deriveVariables();
-        
-        assertTrue("Variable is not derived correctly.",
-                st.getContextProp("project_midfix").equals("TestProject10"));
-        assertTrue("Variable is not derived correctly.",
-                st.getContextProp("project_midfix_lc").equals("testproject10"));
-        assertTrue("Variable is not derived correctly.",
-                st.getContextProp("project_package_path").equals("org/apache/axis2"));
-        assertTrue("Variable is not derived correctly.",
-                st.getContextProp("project_namespace").equals("http://apache.org/axis2"));
+
+        assertEquals("Variable is not derived correctly.", "TestProject10", st.getContextProp("project_midfix"));
+        assertEquals("Variable is not derived correctly.", "testproject10", st.getContextProp("project_midfix_lc"));
+        assertEquals("Variable is not derived correctly.", "org/apache/axis2", st.getContextProp("project_package_path"));
+        assertEquals("Variable is not derived correctly.", "http://apache.org/axis2", st.getContextProp("project_namespace"));
         
         ServiceDef pruSdef = st.getServiceDef();
         assertEquals(sdef, pruSdef);

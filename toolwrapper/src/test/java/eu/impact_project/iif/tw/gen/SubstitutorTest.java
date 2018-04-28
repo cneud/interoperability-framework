@@ -17,13 +17,12 @@
 
 package eu.impact_project.iif.tw.gen;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
 import org.junit.Before;
 import org.junit.Test;
 
 import eu.impact_project.iif.tw.util.PropertyUtil;
+
+import static org.junit.Assert.*;
 
 /**
  *
@@ -53,7 +52,7 @@ public class SubstitutorTest {
     @Test
     public void testGetGlobalProjectPrefix() {
         String globalProjectPrefix = pu.getProp("global.project.prefix");
-        assertTrue("Global project prefix is not correct.",globalProjectPrefix.equals(st.getGlobalProjectPrefix()));
+        assertEquals("Global project prefix is not correct.", globalProjectPrefix, st.getGlobalProjectPrefix());
         
     }
 
@@ -62,7 +61,7 @@ public class SubstitutorTest {
      */
     @Test
     public void testGetProjectResourcesDir() {
-       assertTrue("Resources directory is not correct.",st.getProjectResourcesDir().equals("resources"));
+        assertEquals("Resources directory is not correct.", "resources", st.getProjectResourcesDir());
     }
 
     /**
