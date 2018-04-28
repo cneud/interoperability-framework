@@ -107,9 +107,6 @@ public class FileServiceProvider implements ServiceProvider {
 					+ ")[@description]");
 			String url = config.getString("service(" + i + ")[@url]");
 			int id = config.getInt("service(" + i + ")[@id]");
-			// String desc = config.getString("service(" + i +
-			// ")[@description]"); oopps: description wird schon verwendet.
-			// Lieber titel<=>description! MD
 			try {
 				Service s = new FileService(id, title, description,
 						new URL(url));

@@ -49,22 +49,22 @@ public class GeneratePagesTest
     {
         HttpServletRequest request = mock(HttpServletRequest.class);
         HttpServletResponse response = mock(HttpServletResponse.class);
-        HttpSession sesion = mock(HttpSession.class);
+        HttpSession session = mock(HttpSession.class);
         ServletConfig config = mock(ServletConfig.class);
         ServletContext context = mock(ServletContext.class);
         RequestDispatcher dispatcher = mock(RequestDispatcher.class);
         ServletOutputStream stream = mock(ServletOutputStream.class);
 
         when(config.getServletContext()).thenReturn(context);
-        when(sesion.getServletContext()).thenReturn(context);        
-        when(context.getRequestDispatcher("/prueba.jsp")).thenReturn(dispatcher);
+        when(session.getServletContext()).thenReturn(context);
+        when(context.getRequestDispatcher("/test.jsp")).thenReturn(dispatcher);
         //when(context.getAttribute("FILES_DIR")).thenReturn("");        
-        URL url = this.getClass().getResource("/prueba.txt");        
+        URL url = this.getClass().getResource("/test.txt");
         File testFile = new File(url.getFile());
         when(context.getRealPath("/")).thenReturn(testFile.getParent()+"/");
-        when(request.getParameter("wsId")).thenReturn("/prueba?");        
-        when(request.getSession()).thenReturn(sesion);
-        when(request.getSession(true)).thenReturn(sesion);
+        when(request.getParameter("wsId")).thenReturn("/test?");
+        when(request.getSession()).thenReturn(session);
+        when(request.getSession(true)).thenReturn(session);
         when(response.getOutputStream()).thenReturn(stream);
         
         GeneratePages pages = new GeneratePages();

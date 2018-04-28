@@ -19,7 +19,7 @@ public class GeneratorExceptionTest
     public void testConstructors()
     {
         GeneratorException ex = new GeneratorException();
-        GeneratorException ex2 = new GeneratorException("prueba", ex);
+        GeneratorException ex2 = new GeneratorException("test", ex);
     }
     
 }

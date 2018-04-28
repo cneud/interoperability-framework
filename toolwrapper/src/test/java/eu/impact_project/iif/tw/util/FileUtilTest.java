@@ -36,7 +36,7 @@ public class FileUtilTest
         File temp = new File(JAVA_TMP, "gwg-tmp-store");
         if(temp.exists())
             FileUtil.deleteTempFiles(temp);
-        FileUtil.getTmpFile("prueba", "tmp");        
+        FileUtil.getTmpFile("test", "tmp");
     }
 
     /**
@@ -47,7 +47,7 @@ public class FileUtilTest
     {        
         byte[] data = new byte[1];
         data[0]=(byte)0xFF;
-        FileUtil.getTmpFile(data, "prueba", "tmp");        
+        FileUtil.getTmpFile(data, "test", "tmp");
     }
 
     /**
@@ -58,10 +58,10 @@ public class FileUtilTest
     {
        File temp = new File(JAVA_TMP, "gwg-tmp-store");
        if (!temp.exists())
-           FileUtil.getTmpFile("prueba", "tmp");
+           FileUtil.getTmpFile("test", "tmp");
        byte[] data = new byte[1];
        data[0]=(byte)0xFF;
-       FileUtil.getTmpFile(data, "prueba", "tmp"); 
+       FileUtil.getTmpFile(data, "test", "tmp");
        FileUtil.deleteTempFiles(temp);
     }
 
