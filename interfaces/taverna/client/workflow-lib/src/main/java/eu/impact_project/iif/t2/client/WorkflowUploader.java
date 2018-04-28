@@ -60,11 +60,7 @@ import org.jdom.xpath.XPath;
 public class WorkflowUploader extends HttpServlet {
 	protected String redirect = "/";
 
-	static final Comparator<WorkflowInfo> TITLE_ORDER = new Comparator<WorkflowInfo>() {
-		public int compare(WorkflowInfo w1, WorkflowInfo w2) {
-			return w1.getTitle().compareToIgnoreCase(w2.getTitle());
-		}
-	};
+	static final Comparator<WorkflowInfo> TITLE_ORDER = (w1, w2) -> w1.getTitle().compareToIgnoreCase(w2.getTitle());
 
 	public WorkflowUploader() {
 		super();
