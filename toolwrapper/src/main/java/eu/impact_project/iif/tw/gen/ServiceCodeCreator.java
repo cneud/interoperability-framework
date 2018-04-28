@@ -248,7 +248,7 @@ public class ServiceCodeCreator {
             output = (Output) inout;
             isOutput = true;
         }
-        boolean autoExtension = (isOutput && output.isAutoExtension() != null) ? output.isAutoExtension().booleanValue() : false;
+        boolean autoExtension = (isOutput && output.isAutoExtension() != null) && output.isAutoExtension();
 
         // overrides filename's output
         String outfilename = (isOutput) ? ((Output) inout).getOutFileName() : null;
