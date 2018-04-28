@@ -189,7 +189,7 @@ public class LogHandler {
 		String oneLinelog = log.replaceAll("\\s+", " ");
 
 		// ... Using service: MyService. ...
-		String regex = ".*Using service: ([^\\.\\s]+)\\..*";
+		String regex = ".*Using service: ([^.\\s]+)\\..*";
 		if (!oneLinelog.matches(regex))
 			throw new NoSuchFieldException(
 					"The log does not contain the service name or the format is wrong:\n"
@@ -212,7 +212,7 @@ public class LogHandler {
 		String oneLinelog = log.replaceAll("\\s+", " ");
 
 		// ... Evaluation-ID: MyId. ...
-		String regex = ".*Evaluation-ID: ([^\\.\\s]+)\\..*";
+		String regex = ".*Evaluation-ID: ([^.\\s]+)\\..*";
 		if (!oneLinelog.matches(regex))
 			return "";
 
