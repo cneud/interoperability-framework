@@ -81,9 +81,9 @@ public class UploadFiles extends HttpServlet {
 
 			response.setContentType("text/html");
 	                PrintWriter out = response.getWriter();
-                        response.setContentType("text/plain");  // Set content type of the response so that jQuery knows what it can expect.
-                        response.setCharacterEncoding("UTF-8"); // You want world domination, huh?
-	                //out.write("<html><head></head><body>");
+                        // Set content type of the response so that jQuery knows what it can expect.
+                        response.setContentType("text/plain");
+	                	//out.write("<html><head></head><body>");
 	        
 			try {
 				List<FileItem> fileItemsList = uploader.parseRequest(request);
