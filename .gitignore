@@ -1,9 +1,5 @@
-/interfaces/web/wsdl-client/target/
-/toolwrapper/target/
 *.iml
 *target*
 *~
 .*
 *.log
-toolwrapper/generated/
-*.releaseBackup
