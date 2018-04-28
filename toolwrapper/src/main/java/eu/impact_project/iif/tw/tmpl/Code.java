@@ -40,7 +40,7 @@ public abstract class Code {
 
     /**
      * Constructs a Code object from a template file
-     * @param templateFilePath the strin path to the template file
+     * @param templateFilePath the string path to the template file
      * @throws IOException
      */
     public Code(String templateFilePath) throws IOException {
