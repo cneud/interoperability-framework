@@ -321,8 +321,7 @@ public final class FileUtil {
     public static boolean deleteTempFiles(final File workFolder) {
         if (workFolder.isDirectory()) {
             File[] entries = workFolder.listFiles();
-            for (int i = 0; i < entries.length; i++) {
-                File current = entries[i];
+            for (File current : entries) {
                 boolean deleteTempFiles = deleteTempFiles(current);
                 if (!deleteTempFiles) {
                     return false;

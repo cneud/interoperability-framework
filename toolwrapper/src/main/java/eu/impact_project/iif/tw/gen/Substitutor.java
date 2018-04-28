@@ -114,8 +114,8 @@ public abstract class Substitutor {
     public void processDirectory(File path) throws IOException, GeneratorException {
         if (path.isDirectory()) {
             String[] children = path.list();
-            for (int i = 0; i < children.length; i++) {
-                processDirectory(new File(path, children[i]));
+            for (String aChildren : children) {
+                processDirectory(new File(path, aChildren));
             }
         } else {
             if (path.isFile()) {
