@@ -17,7 +17,7 @@ public class ConstantsTest
         
 
     @Test
-    public void testContructorMethod()
+    public void testConstructorMethod()
     {
         Constants instance = new Constants();
         assertNotEquals(instance, null);
