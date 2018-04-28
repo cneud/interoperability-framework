@@ -26,12 +26,12 @@ public class WorkflowOutputPortTest
     @Test
     public void testGets()
     {        
-        WorkflowOutputPort instance = new WorkflowOutputPort("prueba");
+        WorkflowOutputPort instance = new WorkflowOutputPort("test");
         
         instance = new WorkflowOutputPort();
         
-        instance.setName("prueba");
-        instance.setOutput("prueba", "prueba", "prueba");
+        instance.setName("test");
+        instance.setOutput("test", "test", "test");
         instance.setOutput(new WorkflowOutput());
         
         List<WorkflowOutput> lista = new ArrayList<WorkflowOutput>(); 

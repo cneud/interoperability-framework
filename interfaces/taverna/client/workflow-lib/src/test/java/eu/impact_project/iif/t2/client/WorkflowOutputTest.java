@@ -31,12 +31,12 @@ public class WorkflowOutputTest
         WorkflowOutput instance = new WorkflowOutput();
         
         instance.setBinary(true);
-        instance.setUrl("prueba");
-        instance.setValue("prueba");
+        instance.setUrl("test");
+        instance.setValue("test");
         
         assertEquals(true, instance.isBinary());
-        assertEquals("prueba", instance.getUrl());
-        assertEquals("prueba", instance.getValue());   
+        assertEquals("test", instance.getUrl());
+        assertEquals("test", instance.getValue());
                 
     }
 

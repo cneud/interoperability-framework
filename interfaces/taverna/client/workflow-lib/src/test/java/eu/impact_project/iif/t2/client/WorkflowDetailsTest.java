@@ -23,13 +23,13 @@ public class WorkflowDetailsTest
     {       
         WorkflowDetails instance = new WorkflowDetails();
         
-        instance.setTitle("prueba");
-        instance.setDescription("prueba");
-        instance.setImageUrl("prueba");
+        instance.setTitle("test");
+        instance.setDescription("test");
+        instance.setImageUrl("test");
         
-        assertEquals("prueba", instance.getTitle());
-        assertEquals("prueba", instance.getDescription());
-        assertEquals("prueba", instance.getImageUrl());
+        assertEquals("test", instance.getTitle());
+        assertEquals("test", instance.getDescription());
+        assertEquals("test", instance.getImageUrl());
     }
 
     

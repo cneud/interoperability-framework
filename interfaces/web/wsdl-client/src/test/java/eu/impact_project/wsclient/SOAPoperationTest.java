@@ -23,8 +23,8 @@ public class SOAPoperationTest
     public void testGetName()
     {
         System.out.println("getName");
-        SOAPoperation instance = new SOAPoperation("prueba");
-        String expResult = "prueba";
+        SOAPoperation instance = new SOAPoperation("test");
+        String expResult = "test";
         String result = instance.getName();
         assertEquals(expResult, result);        
     }
@@ -36,7 +36,7 @@ public class SOAPoperationTest
     public void testSetName()
     {
         System.out.println("setName");
-        String name = "prueba";
+        String name = "test";
         SOAPoperation instance = new SOAPoperation(name, null);
         instance.setName(name);
         
@@ -49,7 +49,7 @@ public class SOAPoperationTest
     public void testGetInputs()
     {
         System.out.println("getInputs");
-        SOAPoperation instance = new SOAPoperation("prueba");
+        SOAPoperation instance = new SOAPoperation("test");
         List<SOAPinputField> expResult = null;
         List<SOAPinputField> result = instance.getInputs();
         assertEquals(expResult, result);        
@@ -63,7 +63,7 @@ public class SOAPoperationTest
     {
         System.out.println("setInputs");
         List<SOAPinputField> inputs = null;
-        SOAPoperation instance = new SOAPoperation("prueba");
+        SOAPoperation instance = new SOAPoperation("test");
         instance.setInputs(inputs);
         
     }
@@ -75,7 +75,7 @@ public class SOAPoperationTest
     public void testGetDefaultMessage()
     {
         System.out.println("getDefaultMessage");
-        SOAPoperation instance = new SOAPoperation("prueba");        
+        SOAPoperation instance = new SOAPoperation("test");
         String result = instance.getDefaultMessage();        
     }
 
@@ -87,7 +87,7 @@ public class SOAPoperationTest
     {
         System.out.println("setDefaultMessage");
         String defaultMessage = "";
-        SOAPoperation instance = new SOAPoperation("prueba");
+        SOAPoperation instance = new SOAPoperation("test");
         instance.setDefaultMessage(defaultMessage);       
     }
 
@@ -98,7 +98,7 @@ public class SOAPoperationTest
     public void testGetDocumentation()
     {
         System.out.println("getDocumentation");
-        SOAPoperation instance = new SOAPoperation("prueba");        
+        SOAPoperation instance = new SOAPoperation("test");
         String result = instance.getDocumentation();        
     }
 
@@ -110,7 +110,7 @@ public class SOAPoperationTest
     {
         System.out.println("setDocumentation");
         String documentation = "";
-        SOAPoperation instance = new SOAPoperation("prueba");
+        SOAPoperation instance = new SOAPoperation("test");
         instance.setDocumentation(documentation);        
     }
     

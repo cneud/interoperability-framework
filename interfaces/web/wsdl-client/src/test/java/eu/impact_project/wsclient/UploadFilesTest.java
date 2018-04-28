@@ -46,7 +46,7 @@ public class UploadFilesTest
         when(sesion.getServletContext()).thenReturn(context);
         when(context.getRequestDispatcher("/interface.jsp")).thenReturn(dispatcher);
         when(context.getAttribute("FILES_DIR")).thenReturn("");
-        URL url = this.getClass().getResource("/prueba.txt");        
+        URL url = this.getClass().getResource("/test.txt");
         File testFile = new File(url.getFile());
         when(request.getParameter("filename")).thenReturn(testFile.getAbsolutePath());        
         when(request.getSession()).thenReturn(sesion);
@@ -87,7 +87,7 @@ public class UploadFilesTest
         when(sesion.getServletContext()).thenReturn(context);
         when(context.getRequestDispatcher("/interface.jsp")).thenReturn(dispatcher);
         when(context.getAttribute("FILES_DIR")).thenReturn("");
-        URL url = this.getClass().getResource("/prueba.txt");        
+        URL url = this.getClass().getResource("/test.txt");
         File testFile = new File(url.getFile());
         when(request.getParameter("filename")).thenReturn(testFile.getAbsolutePath());        
         when(request.getSession()).thenReturn(sesion);

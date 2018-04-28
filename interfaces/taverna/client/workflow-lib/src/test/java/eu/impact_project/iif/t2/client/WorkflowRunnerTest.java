@@ -72,7 +72,7 @@ public class WorkflowRunnerTest
         
         ArrayList<Workflow> flowList = new ArrayList<>();
         Workflow flow = new Workflow();
-        flow.setStringVersion("Esto es una prueba");
+        flow.setStringVersion("This is a test");
         flow.setWsdls("<wsdl>http://www.ua.es</wsdl>");
         flow.setUrls("http://www.ua.es");
         
@@ -100,9 +100,9 @@ public class WorkflowRunnerTest
         {
             new StringPart("user", "user"),
             new StringPart("pass", "pass"),
-            new StringPart("workflow0pru0Input", "prueba0"),
-            new StringPart("workflow0pru0Input0", "prueba0.0"),
-            new StringPart("workflow0pru1Input", "prueba1")
+            new StringPart("workflow0pru0Input", "test0"),
+            new StringPart("workflow0pru0Input0", "test0.0"),
+            new StringPart("workflow0pru1Input", "test1")
                 
         };
         
@@ -163,7 +163,7 @@ public class WorkflowRunnerTest
         
         ArrayList<Workflow> flowList = new ArrayList<>();
         Workflow flow = new Workflow();
-        flow.setStringVersion("Esto es una prueba");
+        flow.setStringVersion("This is a test");
         flow.setWsdls("<wsdl>http://www.ua.es</wsdl>");
         flow.setUrls("http://falsa.es");
         
@@ -191,9 +191,9 @@ public class WorkflowRunnerTest
         {
             new StringPart("user", "user"),
             new StringPart("pass", "pass"),
-            new StringPart("workflow0pru0Input", "prueba0"),
-            new StringPart("workflow0pru0Input0", "prueba0.0"),
-            new StringPart("workflow0pru1Input", "prueba1")
+            new StringPart("workflow0pru0Input", "test0"),
+            new StringPart("workflow0pru0Input0", "test0.0"),
+            new StringPart("workflow0pru1Input", "test1")
                 
         };
         

@@ -154,8 +154,8 @@ public class WsdlCreatorTest
     public void testInOutClass()
     {
         InOut instance = new InOut();
-        instance.setCliMapping("prueba");
-        instance.setOutFileName("prueba");
+        instance.setCliMapping("test");
+        instance.setOutFileName("test");
     }
     
     @Test
@@ -176,7 +176,7 @@ public class WsdlCreatorTest
     public void testPort()
     {
         Port instance = new Port();
-        instance.setType("Prueba");
+        instance.setType("Test");
         instance.setValue(100);                
     }
     
@@ -239,24 +239,24 @@ public class WsdlCreatorTest
     {
         Default instance = new Default();
         instance.setValue(null);
-        instance.setClireplacement("prueba");                
+        instance.setClireplacement("test");
     }
     
     @Test
     public void testDataexchange()
     {
         Dataexchange instance = new Dataexchange();
-        instance.setAccessdir("prueba");
-        instance.setAccessurl("prueba");
+        instance.setAccessdir("test");
+        instance.setAccessurl("test");
     }
     
     @Test
     public void testManager()
     {
         Manager instance = new Manager();
-        instance.setPassword("prueba");
-        instance.setPath("prueba");
-        instance.setUser("prueba");
+        instance.setPassword("test");
+        instance.setPath("test");
+        instance.setUser("test");
     }
     
     @Test

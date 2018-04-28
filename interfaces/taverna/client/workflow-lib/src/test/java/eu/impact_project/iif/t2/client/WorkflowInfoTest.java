@@ -23,14 +23,14 @@ public class WorkflowInfoTest
     public void testGets()
     {
         
-        WorkflowInfo instance = new WorkflowInfo("prueba");
+        WorkflowInfo instance = new WorkflowInfo("test");
         instance = new WorkflowInfo();
         
-        instance.setTitle("prueba");
-        instance.setWfId("prueba");
+        instance.setTitle("test");
+        instance.setWfId("test");
         
-        assertEquals("prueba", instance.getTitle());
-        assertEquals("prueba", instance.getWfId());
+        assertEquals("test", instance.getTitle());
+        assertEquals("test", instance.getWfId());
     }
 
     

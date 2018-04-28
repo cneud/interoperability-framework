@@ -192,7 +192,7 @@ public class ToolspecValidatorTest {
         public void testWarning()
         {
             ToolspecValidator tv = new ToolspecValidator(null, null);
-            tv.addError(new Error(ErrType.WARNING, "Error de prueba"));
+            tv.addError(new Error(ErrType.WARNING, "Test error"));
             try
             {
                 tv.checkpoint();

@@ -48,7 +48,7 @@ public class XmlServiceProviderTest
             XmlServiceProvider sp = new XmlServiceProvider(file_url);
             sp.getServiceList();
             
-            XmlService service = sp.new XmlService(1, "prueba", "prueba", new URL("http://prueba"));
+            XmlService service = sp.new XmlService(1, "test", "test", new URL("http://test"));
             service.getDescription();
             service.getIdentifier();
             service.getTitle();

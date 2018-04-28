@@ -23,7 +23,7 @@ public class SOAPinputFieldTest
     public void testGetMultipleSelectValues()
     {
         System.out.println("getMultipleSelectValues");
-        SOAPinputField instance = new SOAPinputField("prueba");       
+        SOAPinputField instance = new SOAPinputField("test");
         List<String> result = instance.getMultipleSelectValues();        
     }
 
@@ -35,7 +35,7 @@ public class SOAPinputFieldTest
     {
         System.out.println("addMultipleSelectValue");
         String value = "";
-        SOAPinputField instance = new SOAPinputField("prueba","prueba");  
+        SOAPinputField instance = new SOAPinputField("test","test");
         instance.addMultipleSelectValue(value);        
     }
 
@@ -46,7 +46,7 @@ public class SOAPinputFieldTest
     public void testGetDefaultValue()
     {
         System.out.println("getDefaultValue");
-        SOAPinputField instance = new SOAPinputField("prueba","prueba",true);  
+        SOAPinputField instance = new SOAPinputField("test","test",true);
         String expResult = "";
         String result = instance.getDefaultValue();              
     }
@@ -59,7 +59,7 @@ public class SOAPinputFieldTest
     {
         System.out.println("setDefaultValue");
         String defaultValue = "";
-        SOAPinputField instance = new SOAPinputField("prueba");  
+        SOAPinputField instance = new SOAPinputField("test");
         instance.setDefaultValue(defaultValue);        
     }
 
@@ -70,7 +70,7 @@ public class SOAPinputFieldTest
     public void testGetName()
     {
         System.out.println("getName");
-        SOAPinputField instance = new SOAPinputField("prueba");  
+        SOAPinputField instance = new SOAPinputField("test");
         String expResult = "";
         String result = instance.getName();        
     }
@@ -83,7 +83,7 @@ public class SOAPinputFieldTest
     {
         System.out.println("setName");
         String name = "";
-        SOAPinputField instance = new SOAPinputField("prueba");  
+        SOAPinputField instance = new SOAPinputField("test");
         instance.setName(name);        
     }
 
@@ -94,7 +94,7 @@ public class SOAPinputFieldTest
     public void testGetDocumentation()
     {
         System.out.println("getDocumentation");
-        SOAPinputField instance = new SOAPinputField("prueba");  
+        SOAPinputField instance = new SOAPinputField("test");
         String expResult = "";
         String result = instance.getDocumentation();        
     }
@@ -107,7 +107,7 @@ public class SOAPinputFieldTest
     {
         System.out.println("setDocumentation");
         String documentation = "";
-        SOAPinputField instance = new SOAPinputField("prueba");  
+        SOAPinputField instance = new SOAPinputField("test");
         instance.setDocumentation(documentation);        
     }
 
@@ -118,7 +118,7 @@ public class SOAPinputFieldTest
     public void testIsBinary()
     {
         System.out.println("isBinary");
-        SOAPinputField instance = new SOAPinputField("prueba");  
+        SOAPinputField instance = new SOAPinputField("test");
         boolean expResult = false;
         boolean result = instance.isBinary();        
     }
@@ -131,7 +131,7 @@ public class SOAPinputFieldTest
     {
         System.out.println("setBinary");
         boolean binary = false;
-        SOAPinputField instance = new SOAPinputField("prueba");  
+        SOAPinputField instance = new SOAPinputField("test");
         instance.setBinary(binary);        
     }
 
@@ -143,7 +143,7 @@ public class SOAPinputFieldTest
     {
         System.out.println("setPossibleValues");
         List<String> possibleValues = null;
-        SOAPinputField instance = new SOAPinputField("prueba");  
+        SOAPinputField instance = new SOAPinputField("test");
         instance.setPossibleValues(possibleValues);       
     }
 
@@ -154,7 +154,7 @@ public class SOAPinputFieldTest
     public void testGetPossibleValues()
     {
         System.out.println("getPossibleValues");
-        SOAPinputField instance = new SOAPinputField("prueba");  
+        SOAPinputField instance = new SOAPinputField("test");
         List<String> expResult = null;
         List<String> result = instance.getPossibleValues();        
     }
