@@ -114,7 +114,7 @@ public class ServiceImpl implements Service {
 
 		try {
 
-			Inputs in = new Inputs(workflowResults, wfId, timer, demId, 0l);
+			Inputs in = new Inputs(workflowResults, wfId, timer, demId, 0L);
 			checkInputs(in);
 			init(in);
 
@@ -237,7 +237,7 @@ public class ServiceImpl implements Service {
 	}
 
 	private long getCurrentTimestamp() {
-		long stamp = 0l;
+		long stamp = 0L;
 		InputStream is = null;
 		try {
 			Properties properties = new Properties();
