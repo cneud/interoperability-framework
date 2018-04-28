@@ -60,7 +60,7 @@ public class LogHandlerTest {
 
 		List<URL> urls = LogHandler.getUrls(logs);
 
-		assertTrue(urls.size() == 2);
+		assertEquals(2, urls.size());
 		assertEquals("http://test.com/test1.txt", urls.get(0).toString());
 	}
 
@@ -100,7 +100,7 @@ public class LogHandlerTest {
 		String log2 = "bla\nProcess finished successfully after 2222 milliseconds..";
 		List<String> logs = Arrays.asList(new String[] { log1, log2 });
 		long totalTime = LogHandler.getTime(logs);
-		assertTrue(3333 == totalTime);
+		assertEquals(3333, totalTime);
 	}
 
 	@Test(expected = NoSuchFieldException.class)
