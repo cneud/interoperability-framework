@@ -51,8 +51,8 @@ public interface Service {
 	 * @return A message that informs the user of the storage success and/or of
 	 *         the occurred errors.
 	 */
-	public String storeData(@WebParam(name = "allResults") Results allResults,
-			@WebParam(name = "workflowID") String workflowID,
-			@WebParam(name = "timer") long timer,
-			@WebParam(name = "demonstratorID") String demonstratorID);
+	String storeData(@WebParam(name = "allResults") Results allResults,
+					 @WebParam(name = "workflowID") String workflowID,
+					 @WebParam(name = "timer") long timer,
+					 @WebParam(name = "demonstratorID") String demonstratorID);
 }

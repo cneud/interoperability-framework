@@ -44,7 +44,7 @@ public interface ServiceProvider {
 	/**
 	 * Represents a service, e.g. a Web Service
 	 */
-	public interface Service {
+	interface Service {
 		abstract URL getURL ();
 		abstract String getTitle ();
 		abstract String getDescription ();
