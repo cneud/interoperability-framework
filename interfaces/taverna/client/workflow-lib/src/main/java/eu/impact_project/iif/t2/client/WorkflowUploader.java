@@ -210,7 +210,7 @@ public class WorkflowUploader extends HttpServlet {
 				wfInfo.setTitle(wfTitle);
 				wfInfos.add(wfInfo);
 			}
-			Collections.sort(wfInfos, TITLE_ORDER);
+			wfInfos.sort(TITLE_ORDER);
 
 			return wfInfos;
 
