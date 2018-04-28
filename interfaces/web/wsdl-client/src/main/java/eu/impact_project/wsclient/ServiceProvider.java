@@ -32,22 +32,22 @@ public interface ServiceProvider {
 	 * 
 	 * @return The list with all existing services
 	 */
-	abstract List<Service> getServiceList ();
+	List<Service> getServiceList();
 	
 	/**
 	 * 
 	 * @param id	ID of the service
 	 * @return		URL to the service
 	 */
-	abstract URL getUrl (String id);
+	URL getUrl(String id);
 
 	/**
 	 * Represents a service, e.g. a Web Service
 	 */
 	interface Service {
-		abstract URL getURL ();
-		abstract String getTitle ();
-		abstract String getDescription ();
-		abstract int getIdentifier();
+		URL getURL();
+		String getTitle();
+		String getDescription();
+		int getIdentifier();
 	}
 }
