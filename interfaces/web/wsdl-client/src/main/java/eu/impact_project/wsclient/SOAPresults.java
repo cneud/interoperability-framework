@@ -212,14 +212,19 @@ public class SOAPresults extends HttpServlet {
 				String fileEnding = "";
 				String contentType = attachment.getContentType();
 				System.out.println("content type: " + contentType);
-				if (contentType.equals("image/gif")) {
-					fileEnding = ".gif";
-				} else if (contentType.equals("image/jpeg")) {
-					fileEnding = ".jpg";
-				} else if (contentType.equals("image/tiff")) {
-					fileEnding = ".tif";
-				} else if (contentType.equals("application/vnd.ms-excel")) {
-					fileEnding = ".xlsx";
+				switch (contentType) {
+					case "image/gif":
+						fileEnding = ".gif";
+						break;
+					case "image/jpeg":
+						fileEnding = ".jpg";
+						break;
+					case "image/tiff":
+						fileEnding = ".tif";
+						break;
+					case "application/vnd.ms-excel":
+						fileEnding = ".xlsx";
+						break;
 				}
 				
 				String fileName = loadDefault? defaultFilePrefix: "attachedFile";
