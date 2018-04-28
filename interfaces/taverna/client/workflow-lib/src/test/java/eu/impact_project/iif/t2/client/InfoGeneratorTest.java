@@ -36,17 +36,17 @@ public class InfoGeneratorTest
     {
         HttpServletRequest request = mock(HttpServletRequest.class);
         HttpServletResponse response = mock(HttpServletResponse.class); 
-        HttpSession sesion = mock(HttpSession.class);
+        HttpSession session = mock(HttpSession.class);
         ServletConfig config = mock(ServletConfig.class);
         ServletContext context = mock(ServletContext.class);
         RequestDispatcher dispatcher = mock(RequestDispatcher.class);
         ServletOutputStream stream = mock(ServletOutputStream.class);
 
-        when(request.getSession(true)).thenReturn(sesion);
+        when(request.getSession(true)).thenReturn(session);
         when(request.getParameter("id")).thenReturn("16");
         //when(request.getParameter("id")).thenReturn("4555");
-        when(sesion.getAttribute("user")).thenReturn(null);
-        when(sesion.getAttribute("password")).thenReturn(null);
+        when(session.getAttribute("user")).thenReturn(null);
+        when(session.getAttribute("password")).thenReturn(null);
         
         when(config.getServletContext()).thenReturn(context);        
         when(context.getRequestDispatcher("/info.jsp")).thenReturn(dispatcher);                

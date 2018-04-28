@@ -101,13 +101,13 @@ public class HelperTest
     public void testParseRequest() throws Exception
     {
         HttpServletRequest request = mock(HttpServletRequest.class);
-        URL url = this.getClass().getResource("/prueba.txt");        
+        URL url = this.getClass().getResource("/test.txt");
         File testFile = new File(url.getFile());       
         Part[] parts = new Part[] 
         {
             new StringPart("user", "user"),
             new FilePart("file_workflow",testFile),
-            new FilePart("comon_file",testFile)
+            new FilePart("common_file",testFile)
         };
         
         MultipartRequestEntity multipartRequestEntity = 

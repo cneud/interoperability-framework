@@ -47,17 +47,17 @@ public class GroupSelectorTest
     {        
         HttpServletRequest request = mock(HttpServletRequest.class);
         HttpServletResponse response = mock(HttpServletResponse.class); 
-        HttpSession sesion = mock(HttpSession.class);
+        HttpSession session = mock(HttpSession.class);
         ServletConfig config = mock(ServletConfig.class);
         ServletContext context = mock(ServletContext.class);
         RequestDispatcher dispatcher = mock(RequestDispatcher.class);        
 
-        when(request.getSession(true)).thenReturn(sesion);
+        when(request.getSession(true)).thenReturn(session);
         
-        when(request.getParameter("MyExpGroup0")).thenReturn("prueba0");
-        when(request.getAttribute("MyExpGroup1")).thenReturn("prueba1");
-        when(request.getParameter("MyExpWorkflow0")).thenReturn("prueba0");
-        when(request.getAttribute("MyExpWorkflow1")).thenReturn("prueba1");
+        when(request.getParameter("MyExpGroup0")).thenReturn("test0");
+        when(request.getAttribute("MyExpGroup1")).thenReturn("test1");
+        when(request.getParameter("MyExpWorkflow0")).thenReturn("test0");
+        when(request.getAttribute("MyExpWorkflow1")).thenReturn("test1");
                         
         when(config.getServletContext()).thenReturn(context);        
         when(context.getRequestDispatcher("/")).thenReturn(dispatcher);                
