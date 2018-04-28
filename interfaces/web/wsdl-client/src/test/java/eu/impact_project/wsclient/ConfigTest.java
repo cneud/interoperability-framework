@@ -41,7 +41,7 @@ public class ConfigTest {
 				System.out.println(s.getDescription());
 			}
                         FileServiceProvider pro = new FileServiceProvider();
-                        FileService service = pro.new FileService(1, "prueba", "prueba", new URL("http://prueba"));
+                        FileService service = pro.new FileService(1, "test", "test", new URL("http://test"));
                         service.getDescription();
                         service.getIdentifier();
                         service.getTitle();
